@@ -34,16 +34,16 @@ class FindFirstTest {
             "we", "would", "streaming", "know", "chained", "executed", "experiment", "implement"
         };
 
+        // TODO:
+        //  Please write a test to prove that how many times the `filter()` API will be called in
+        //  above expression.
+        // <--start-
         final Optional<String> finalResult = Arrays.stream(arrayWith6LongWords)
             .filter(w -> w.length() > 2)
             .skip(2)
             .limit(3)
             .findAny();
 
-        // TODO:
-        //  Please write a test to prove that how many times the `filter()` API will be called in
-        //  above expression.
-        // <--start-
         fail("Please write a test");
         // --end-->
     }
